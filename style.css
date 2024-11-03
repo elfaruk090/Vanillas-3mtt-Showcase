@@ -104,7 +104,7 @@ body.page1, body.page2, body.page3, body.page4{
 /*Login Page Style*/
 body.login{
     margin: 0;
-    padding: 50px;
+    padding: 100px;
     text-align: center;
     justify-items: center;
     h3 a{
@@ -125,6 +125,7 @@ body.login{
         border: 1px solid;
         border-radius: 10px;
         margin-bottom: 20px;
+        background-color: cornsilk;
     }
     button{
         width: 200px;
@@ -161,6 +162,7 @@ body.register{
         border: 1px solid;
         border-radius: 10px;
         margin-bottom: 20px;
+        background-color: cornsilk;
     }
     #input-gender{
         margin-bottom: 20px;
@@ -203,6 +205,9 @@ body.home{
     .container{
         justify-self: center;
         width: 400px;
+        a{
+            text-decoration: none;
+        }
     }
     .box{
         text-align: center;
@@ -211,9 +216,8 @@ body.home{
         margin-bottom: 25px;
         border-radius: 10px;
         border: 2px solid darkred;
-        a{
+        h2{
             color: white;
-            text-decoration: none;
         }
     }
 }
@@ -247,6 +251,20 @@ body.support, body.support-advance{
         border-radius: 20px;
         color: white;
         background-color: darkblue;
+    }
+}
+
+/*Privacy Policy*/
+body.privacy{
+    padding-top: 105px;
+    h1{
+        text-align: center;
+    }
+    p{
+        padding-left: 50px;
+        padding-right: 50px;
+        text-align: start;
+        font-size: 24px;
     }
 }
 
@@ -298,7 +316,7 @@ body.page1, body.page2, body.page3, body.page4{
 /*Login Page Style*/
 body.login{
     padding-top: 100px;
-    margin: 0;
+    margin: 20px;
     text-align: center;
     justify-items: center;
     h3{
@@ -310,7 +328,7 @@ body.login{
         color: darkblue;
     }
     .container{
-        width: 300px;
+        width: 250px;
         background-color: rgb(0, 140, 185);
         padding: 20px;
         border: 1px solid;
@@ -324,7 +342,7 @@ body.login{
         border: 1px solid;
         border-radius: 10px;
         margin-bottom: 20px;
-        background-color: #E0F7FA;
+        background-color: cornsilk;
     }
     button{
         width: 100px;
@@ -339,6 +357,7 @@ body.login{
 /*Register Page Style*/
 body.register{
 padding-top: 100px;
+margin: 20px;
 margin: 0;
     justify-items: center;
     text-align: center;
@@ -351,7 +370,7 @@ margin: 0;
     }
     .container{
         text-align: center;
-        width: 300px;
+        width: 250px;
         border-radius: 15px;   
     }
     .box{
@@ -362,15 +381,6 @@ margin: 0;
         border-radius: 15px;
         
     }
-        p{
-            text-align: left;
-            padding-left: 15px;
-            color: darkblue;
-            font-size: 18px;
-            span{
-                color: lightgreen;
-            }
-    }
 
     #input{
         width: 150px;
@@ -379,17 +389,10 @@ margin: 0;
         border: 1px solid;
         border-radius: 10px;
         margin-bottom: 20px;
-        background-color: #E0F7FA;
+        background-color: cornsilk;
     }
     #input-gender{
         margin-bottom: 20px;
-    }
-    #file{
-        padding: 10px;
-        width: 200px;
-        border-radius: 10px;
-        margin-bottom: 20px;
-        background-color: darkred;
     }
     button{
         width: 100px;
@@ -404,6 +407,7 @@ margin: 0;
 /*Home Style*/
 body.home{
     padding-top: 125px;
+    margin: 25px;
     .form{
         justify-self: center;
         padding-top: 25px;
@@ -429,6 +433,8 @@ body.home{
     .container{
         justify-self: center;
         width: 300px;
+        a{
+        text-decoration: none;
     }
     .box{
         text-align: center;
@@ -437,13 +443,12 @@ body.home{
         margin-bottom: 25px;
         border-radius: 10px;
         border: 2px solid darkred;
-        a{
+        h2{
             color: white;
-            text-decoration: none;
         }
     }
 }
-
+}
 /*Support*/
 body.support, body.support-advance{
     .container{
