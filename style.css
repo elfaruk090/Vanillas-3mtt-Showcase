@@ -316,7 +316,6 @@ body.page1, body.page2, body.page3, body.page4{
 /*Login Page Style*/
 body.login{
     padding-top: 100px;
-    margin: 20px;
     text-align: center;
     justify-items: center;
     h3{
@@ -357,7 +356,6 @@ body.login{
 /*Register Page Style*/
 body.register{
 padding-top: 100px;
-margin: 20px;
 margin: 0;
     justify-items: center;
     text-align: center;
@@ -408,8 +406,8 @@ margin: 0;
 body.home{
     padding-top: 125px;
     margin: 25px;
+    justify-items: center;
     .form{
-        justify-self: center;
         padding-top: 25px;
         input{
             width: 200px;
