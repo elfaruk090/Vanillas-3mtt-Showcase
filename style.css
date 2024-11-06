@@ -84,7 +84,7 @@ header{
 
 /*Page1 to Page4*/
 body.page1, body.page2, body.page3, body.page4{
-    padding-top: 105px;
+    padding-top: 100px;
 .container {
     text-align: center;    
     background-color: none;
