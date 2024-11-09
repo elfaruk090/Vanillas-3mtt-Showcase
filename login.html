@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>Vanillas | Register</title>
+    <title>Vanillas | Login</title>
     <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 
@@ -11,13 +11,17 @@
         *{
             justify-self: center;
         }
-        body.register{
+        body.login{
         margin: auto;
         padding: 0;
-        padding-top: 50px;
+        padding-top: 100px;
         justify-items: center;
         justify-content: center;
-        text-align: center;    
+        text-align: center;
+    
+    h1{
+        color: darkred;
+    }
     h3 a{
         text-decoration: none;
         color: darkblue;
@@ -30,10 +34,8 @@
         padding: 20px;
         border: 1px solid;
         border-radius: 15px;
-        margin-bottom: 50px;
     }
-
-    #input{
+    input{
         width: 300px;
         height: 20px;
         padding: 15px;
@@ -41,9 +43,6 @@
         border-radius: 10px;
         margin-bottom: 20px;
         background-color: cornsilk;
-    }
-    #input-gender{
-        margin-bottom: 20px;
     }
     button{
         width: 200px;
@@ -56,13 +55,10 @@
 }
 
 @media (max-width: 580px) {
-    body.register{
+    body.login{
         margin: auto;
     justify-items: center;
     text-align: center;
-    h1{
-        color: darkred;
-    }    
     h3 a{
         text-decoration: none;
         color: darkblue;
@@ -76,8 +72,7 @@
         border: none;
         border-radius: none;
     }
-
-    #input{
+    input{
         width: 200px;
         height: 10px;
         padding: 15px;
@@ -85,9 +80,6 @@
         border-radius: 10px;
         margin-bottom: 20px;
         background-color: skyblue;
-    }
-    #input-gender{
-        margin-bottom: 20px;
     }
     button{
         width: 100px;
@@ -101,31 +93,20 @@
 }
     </style>
 </head>
-<body class="register">
+<body class="login">
     <div class="container">
-        <form action="register-form">
-            <h1>Register</h1>
-            <input type="text" name="fullname" placeholder="Enter Your Full Name" id="input">
-            <br>
-            <input type="text" name="emailid" placeholder="Enter Your Email Id" id="input">
-            <br>
-            <h3>Select Gender:</h3>
-            <input type="radio" name="gender" value="male" id="input-gender">
-            <label for="male">Male</label>
-            <input type="radio" name="gender" value="female" d="input-gender">
-            <label for="female">Female</label>
-            <input type="radio" name="gender" value="other" d="input-gender">
-            <label for="other">Other</label>           
-            <br>
-            <input type="password" name="password" placeholder="Create Password" id="input">
-            <br>
-            <input type="password" name="password" placeholder="Confirm Password" id="input">
-            <br>
-            <a href="#">
-            <button type="button">Register</button>
-            </a>
-            <h3>Registered? <a href="login.html">Login</a></h3>
-        </form>
+        <h1>Login</h1>
+    <form action="login-form">
+        <br>
+        <input type="text" name="emailid" placeholder="Enter Your Email Id">
+        <br>
+        <input type="password" name="password" placeholder="Enter Your Password">
+        <br>
+        <a href="home.html">
+        <button type="button">Login</button>
+        </a>
+        <h3>Not Registered? <a href="register.html">Register</a></h3>
+    </form>
     </div>
 </body>
 </html>

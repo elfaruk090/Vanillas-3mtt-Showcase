@@ -2,111 +2,52 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>Vanillas | Login</title>
-    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanillas</title>
     <link rel="stylesheet" href="style.css">
-
     <style>
-        *{
-            justify-self: center;
+        body{
+            background-image: url(images/soft\ gif.gif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
         }
-        body.login{
-        margin: auto;
-        padding: 0;
-        padding-top: 100px;
-        justify-items: center;
-        justify-content: center;
-        text-align: center;
-    
-    h1{
-        color: darkred;
-    }
-    h3 a{
-        text-decoration: none;
-        color: darkblue;
-    }
-    .container{
-        margin: auto;
-        justify-self: center;
-        width: 600px;
-        background-color: rgb(0, 140, 185);
-        padding: 20px;
-        border: 1px solid;
-        border-radius: 15px;
-    }
-    input{
-        width: 300px;
-        height: 20px;
-        padding: 15px;
-        border: 1px solid;
-        border-radius: 10px;
-        margin-bottom: 20px;
-        background-color: cornsilk;
-    }
-    button{
-        width: 200px;
-        height: 40px;
-        border-radius: 10px;
-        font-size: 18px;
-        color: white;
-        background-color: darkblue;
-    }
-}
+        .button{
+            text-align: center;
+            margin-top: 40vh;
+            button{
+                width: 120px;
+                height: 50px;
+                color: white;
+                background-color: darkred;
+                font-size: 26px;
+            }
+        }
 
-@media (max-width: 580px) {
-    body.login{
-        margin: auto;
-    justify-items: center;
-    text-align: center;
-    h3 a{
-        text-decoration: none;
-        color: darkblue;
-    }
-    .container{
-        margin: auto;
-        justify-self: center;
-        width: 300px;
-        background-color: transparent;
-        padding: 10px;
-        border: none;
-        border-radius: none;
-    }
-    input{
-        width: 200px;
-        height: 10px;
-        padding: 15px;
-        border: 2px solid;
-        border-radius: 10px;
-        margin-bottom: 20px;
-        background-color: skyblue;
-    }
-    button{
-        width: 100px;
-        height: 40px;
-        border-radius: 10px;
-        font-size: 18px;
-        color: white;
-        background-color: darkblue;
-    }
-}
-}
+        @media (max-width: 580px) {
+            body{
+            background-image: url(images/12d664a0-da33-43da-9059-48075c1cad7d_800x1040\ phn.gif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+        }
+        .button{
+            text-align: center;
+            margin-top: 40vh;
+            button{
+                width: 120px;
+                height: 50px;
+                color: white;
+                background-color: darkred;
+                font-size: 26px;
+            }
+        }
+        }
     </style>
 </head>
-<body class="login">
-    <div class="container">
-        <h1>Login</h1>
-    <form action="login-form">
-        <br>
-        <input type="text" name="emailid" placeholder="Enter Your Email Id">
-        <br>
-        <input type="password" name="password" placeholder="Enter Your Password">
-        <br>
-        <a href="home.html">
-        <button type="button">Login</button>
-        </a>
-        <h3>Not Registered? <a href="register.html">Register</a></h3>
-    </form>
-    </div>
+<body>
+    <div class="button"><a href="login.html"><button>Login</button></a></div>
 </body>
 </html>
