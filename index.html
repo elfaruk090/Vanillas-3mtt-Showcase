@@ -6,101 +6,6 @@
     <title>Vanillas</title>
     <link rel="stylesheet" href="style.css">
 
-    <script>
-        const taskList = document.getElementById('taskList');
-const searchInput = document.getElementById('searchInput');
-
-document.getElementById('addTaskBtn').addEventListener('click', function() {
-    const title = document.getElementById('taskTitleInput').value;
-    const description = document.getElementById('taskDescriptionInput').value;
-    const priority = document.getElementById('taskPriorityInput').value;
-
-    if (title && description) {
-        const li = document.createElement('li');
-        
-        // Create checkbox
-        const checkbox = document.createElement('input');
-        checkbox.type = 'checkbox';
-        checkbox.className = 'task-checkbox';
-        checkbox.addEventListener('change', function() {
-            if (this.checked) {
-                li.classList.add('completed');
-            } else {
-                li.classList.remove('completed');
-            }
-        });
-
-        // Create delete button
-        const deleteButton = document.createElement('button');
-        deleteButton.innerText = 'Delete';
-        deleteButton.className = 'delete-btn';
-        deleteButton.addEventListener('click', function() {
-            taskList.removeChild(li);
-        });
-
-        // Create a task description element
-        const taskTitle = document.createElement('strong');
-        taskTitle.innerText = title;
-        
-        const taskDesc = document.createElement('span');
-        taskDesc.innerText = ` (${priority}): ${description}`;
-        
-        li.setAttribute('data-priority', priority);
-        
-        li.prepend(checkbox); // Add checkbox to the start of the list item
-        li.appendChild(taskTitle);
-        li.appendChild(taskDesc);
-        li.appendChild(deleteButton); // Add delete button to the end of the list item
-        
-        taskList.appendChild(li);
-        
-        // Clear the input fields
-        document.getElementById('taskTitleInput').value = '';
-        document.getElementById('taskDescriptionInput').value = '';
-        document.getElementById('taskPriorityInput').value = 'low'; // Reset to default
-    } else {
-        alert('Please enter both a title and a description for the task.');
-    }
-
-    sortTasks();
-    filterTasks();
-});
-
-searchInput.addEventListener('input', filterTasks);
-
-function filterTasks() {
-    const searchTerm = searchInput.value.toLowerCase();
-    const tasks = taskList.getElementsByTagName('li');
-
-    for (let i = 0; i < tasks.length; i++) {
-        const taskTitle = tasks[i].querySelector('strong').innerText.toLowerCase();
-        const taskDescription = tasks[i].querySelector('span').innerText.toLowerCase();
-        
-        if (taskTitle.includes(searchTerm) || taskDescription.includes(searchTerm)) {
-            tasks[i].style.display = '';
-        } else {
-            tasks[i].style.display = 'none';
-        }
-    }
-}
-
-function sortTasks() {
-    const tasks = Array.from(taskList.getElementsByTagName('li'));
-    const priorityOrder = { 'high': 1, 'medium': 2, 'low': 3 };
-
-    tasks.sort((a, b) => {
-        const priorityA = a.getAttribute('data-priority');
-        const priorityB = b.getAttribute('data-priority');
-        return priorityOrder[priorityA] - priorityOrder[priorityB];
-    });
-
-    // Clear the task list and re-append sorted tasks
-    taskList.innerHTML = '';
-    tasks.forEach(task => taskList.appendChild(task));
-}
-
-    </script>
-
     <style>
         body{
             background-image: url(images/soft\ gif.gif);
@@ -145,5 +50,10 @@ function sortTasks() {
 </head>
 <body>
     <div class="button"><a href="login.html"><button>Login</button></a></div>
+    <script type="text/javascript">
+        var infolinks_pid = 3429094;
+        var infolinks_wsid = 0;
+        </script>
+    <script type="text/javascript" src="http://resources.infolinks.com/js/infolinks_main.js"></script>
 </body>
 </html>
